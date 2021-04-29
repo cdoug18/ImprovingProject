@@ -1,0 +1,19 @@
+﻿@model ImprovingProject.Models.Breed
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="center">
+    <h1 class="fontSize">Dogs!</h1>
+
+    <p>Check out all the breeds this API supports!</p>
+
+    <select>
+        @foreach (var item in Model.Message)
+        {
+            <option value="item">@Html.DisplayFor(modelItem => item)</option>
+        }
+    </select>
+</div>
+
